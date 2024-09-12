@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>To-Do App</title>
   </head>
   <body>
@@ -24,10 +24,10 @@
           <button class="add-button" onclick="addTask()">Add</button>
         </div>
         <div class="list-cleaner">
-          <button class="delete-all-done">Delete All Done</button>
-          <button class="check-all">Check All</button>
-          <button class="uncheck-all">Uncheck All</button>
-          <button class="clear-all">Clear All</button>
+          <button onclick="checkAll()" id="check-all">Check All</button>
+          <button id="uncheck-all">Uncheck All</button>
+          <button id="delete-all-done">Delete All Done</button>
+          <button id="clear-all">Clear All</button>
         </div>
         <ul id="list-container">
           <!-- <li class="checked">Task 1</li>
@@ -35,7 +35,11 @@
           <li>Task 3</li> -->
         </ul>
       </div>
-      <footer>made by<a href=" https://github.com/viniciusrosner">Vini Rosner</a></footer>
+      <footer>
+        made by<a class="footer-link" href=" https://github.com/viniciusrosner">
+          Vini Rosner</a
+        >
+      </footer>
     </div>
 
     <script src="script.js"></script>
