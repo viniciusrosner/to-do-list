@@ -42,6 +42,11 @@ inputBox.addEventListener("keypress", function (e) {
 })
 
 
+const clearAll = () => {
+    
+}
+
+
 
 const saveData = () => {
     localStorage.setItem("data", listContainer.innerHTML)
@@ -52,3 +57,4 @@ const loadData = () => {
 }
 
 loadData()
+

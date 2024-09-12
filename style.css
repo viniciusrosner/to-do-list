@@ -55,15 +55,20 @@ input {
   font-weight: 14px;
 }
 
-button {
-  border: none;
-  outline: none;
+.add-button {
+  border-width: 2.5px;
+  outline: #000000;
   padding: 16px 50px;
   background: #9f9f9f;
   color: #000000;
   font-size: 16px;
   cursor: pointer;
   border-radius: 40px;
+}
+
+.add-button:hover {
+  color: #e0e0e0;
+  transition: color 250ms ease;
 }
 
 ul li {
@@ -98,6 +103,7 @@ ul li.checked::before {
 }
 
 ul li span {
+  transition: all 130ms ease-in-out;
   position: absolute;
   right: 0;
   top: 5px;
@@ -111,5 +117,30 @@ ul li span {
 }
 
 ul li span:hover {
-  background: #787878;
+  background: hsl(0, 0%, 47%);
+}
+
+.list-cleaner {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.list-cleaner button {
+  border: none;
+  font-weight: bolder;
+  outline: none;
+  background: #f7f7f7;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.list-cleaner button:hover {
+  color: #919191;
+  transition: color 250ms ease;
+  cursor: pointer;
+}
+
+footer {
 }
