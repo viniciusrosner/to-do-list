@@ -39,11 +39,31 @@ inputBox.addEventListener("keypress", function (e) {
 const checkAll = document.getElementById("check-all");
 const uncheckAll = document.getElementById("uncheck-all");
 const deleteAllDone = document.getElementById("delete-all-done");
-const clearAll = document.getElementById("clear-all");
+const deleteAll = document.getElementById("delete-all");
 
-checkAll.addEventListener("click", function (e) {
-  listContainer.remove(li);
+
+
+deleteAllDone.addEventListener("click", () => {
+  let e = document.getElementsByClassName("checked")
+  while (e.length > 0) {
+    e[0].parentNode.removeChild(e[0]);
+  }
 });
+
+
+
+
+
+deleteAll.addEventListener("click", () => {
+  const e = document.getElementById("list-container");
+  e.innerHTML = "";
+  saveData();
+})
+
+
+
+
+
 
 const saveData = () => {
   localStorage.setItem("data", listContainer.innerHTML);
