@@ -26,17 +26,23 @@
         <div class="list-cleaner">
           <button onclick="checkAll()" id="check-all">Check All</button>
           <button id="uncheck-all">Uncheck All</button>
-          <button id="delete-all-done">Delete All Done</button>
-          <button id="clear-all">Clear All</button>
+          <button onclick="deleteAllDone()" id="delete-all-done">
+            Delete All Done
+          </button>
+          <button onclick="deleteAll()" id="delete-all">Delete All</button>
         </div>
         <ul id="list-container">
-          <!-- <li class="checked">Task 1</li>
+          <!-- <li  class="li-checked">Task 1</li>
           <li>Task 2</li>
           <li>Task 3</li> -->
         </ul>
       </div>
       <footer>
-        made by<a class="footer-link" href=" https://github.com/viniciusrosner">
+        made by<a
+          class="footer-link"
+          href=" https://github.com/viniciusrosner"
+          target="_blank"
+        >
           Vini Rosner</a
         >
       </footer>
